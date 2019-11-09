@@ -6,14 +6,381 @@
 body {
   font-size: 125%;
   margin: 0 auto;
-  max-width: 42em;
-  width: 88%;
+  max-width: 98em;
 }
 
-/* line 12, src/sass/components/_base.scss */
+/* line 11, src/sass/components/_base.scss */
 input,
 textarea,
 select,
 button {
   font: inherit;
+}
+
+/* line 1, src/sass/components/_header.scss */
+.page-header {
+  display: block;
+  padding: 0 80px 0 80px;
+  background-color: #448ccb;
+}
+
+/* line 7, src/sass/components/_header.scss */
+.page-header__container {
+  background-color: #448ccb;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 15, src/sass/components/_header.scss */
+.page-header__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 20, src/sass/components/_header.scss */
+.header-navigation-left {
+  display: inline;
+}
+
+/* line 24, src/sass/components/_header.scss */
+.header-navigation-left__text {
+  font-size: 0.7em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 7px;
+  display: inline;
+  border-right: 1px solid;
+  padding-left: 0.3em;
+}
+
+/* line 35, src/sass/components/_header.scss */
+.header-navigation-left__text--border {
+  border-right: none;
+  padding-left: 0;
+}
+
+/* line 39, src/sass/components/_header.scss */
+.page-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  font-size: 1.58em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 47, src/sass/components/_header.scss */
+.page-header__light {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+/* line 53, src/sass/components/_header.scss */
+.page-header__bold {
+  font-weight: 900;
+}
+
+/* line 57, src/sass/components/_header.scss */
+.page-header__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 61, src/sass/components/_header.scss */
+.header-navigation-right__text {
+  font-weight: bold;
+  font-size: 0.88em;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+/* line 68, src/sass/components/_header.scss */
+.header-navigation-right__text:hover {
+  color: #1e2123;
+}
+
+/* line 1, src/sass/components/_content.scss */
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 6, src/sass/components/_content.scss */
+.first-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+/* line 13, src/sass/components/_content.scss */
+.aside-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1.2;
+      flex-shrink: 1.2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background-color: #448ccb;
+  padding: 40px 50px;
+  margin: 80px;
+  color: #ffffff;
+}
+
+/* line 24, src/sass/components/_content.scss */
+.aside-container__title {
+  font-weight: 900;
+  font-size: 2.41em;
+  text-transform: uppercase;
+}
+
+/* line 29, src/sass/components/_content.scss */
+.aside-container__title::after {
+  content: '';
+  display: block;
+  position: relative;
+  border-bottom: 8px solid #ffffff;
+  width: 65px;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+
+/* line 39, src/sass/components/_content.scss */
+.button-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #ffffff;
+  background-color: #448ccb;
+  color: #ffffff;
+  padding: 2px 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 0.88em;
+  font-weight: 600;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+/* line 52, src/sass/components/_content.scss */
+.first-article {
+  margin: 80px 80px 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 58, src/sass/components/_content.scss */
+.first-article-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 62, src/sass/components/_content.scss */
+.first-article-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+/* line 69, src/sass/components/_content.scss */
+.first-article-container {
+  background-color: #d7d7d7;
+  padding: 20px 50px;
+}
+
+/* line 74, src/sass/components/_content.scss */
+.second-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #448ccb;
+  padding: 80px;
+  color: #ffffff;
+}
+
+/* line 83, src/sass/components/_content.scss */
+.list-block {
+  padding-left: 30px;
+}
+
+/* line 87, src/sass/components/_content.scss */
+.list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ffffff;
+  color: #1e2123;
+  padding: 0 30px;
+}
+
+/* line 95, src/sass/components/_content.scss */
+.article-column {
+  margin-left: 40px;
+}
+
+/* line 99, src/sass/components/_content.scss */
+.third-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px;
+  color: #1e2123;
+}
+
+/* line 106, src/sass/components/_content.scss */
+.contact-container__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 110, src/sass/components/_content.scss */
+.contact-form {
+  margin-left: 40px;
+}
+
+/* line 1, src/sass/components/_footer.scss */
+.page-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1e2123;
+  color: #ffffff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 80px;
+}
+
+/* line 8, src/sass/components/_footer.scss */
+.footer-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 12, src/sass/components/_footer.scss */
+.footer-article__text {
+  color: #717171;
+  font-size: 0.82em;
+}
+
+/* line 17, src/sass/components/_footer.scss */
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+/* line 26, src/sass/components/_footer.scss */
+.footer-nav__menu {
+  display: inline-block;
+}
+
+/* line 30, src/sass/components/_footer.scss */
+.footer-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+/* line 35, src/sass/components/_footer.scss */
+.footer-nav__items {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.64em;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+/* line 45, src/sass/components/_footer.scss */
+.footer-rights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0.64em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* line 7, src/sass/main.scss */
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
 }
