@@ -1,8 +1,11 @@
-@import "components/base";
 @import "components/colors";
-@import "components/header.scss";
-@import "components/content.scss";
-@import "components/footer.scss";
+@import "components/base";
+@import "components/mixin";
+@import "components/header";
+@import "components/content";
+@import "components/footer";
+@import "components/dropdown-menu";
+
 
 html, body{
     font-family: 'Open Sans', sans-serif;

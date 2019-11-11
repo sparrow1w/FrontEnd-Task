@@ -1,71 +1,87 @@
 .page-header {
-    display: block;
-    padding: 0 80px 0 80px;
+    padding: 8px 15px 0 85px;
     background-color: $mainColor;
-}
 
-.page-header__container {
-    background-color: $mainColor;
-    color: $textLight;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    &__container {
+        background-color: $mainColor;
+        color: $textLight;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @include size1000 {
+            flex-direction: column;
+        }
+    }
 
-.page-header__left-side {
-    display: flex;
-    flex-direction: column;
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right-side {
+        display: flex;
+        @include size1000 {
+            align-self: flex-end;
+        }
+    }
+
+    &__right-menu {
+        display: flex;
+        align-items: center;
+        
+    }
 }
 
 .header-navigation-left {
     display: inline;
 
-}
-.header-navigation-left__text {
-    font-size: 0.7em;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0 7px;
-    display: inline;
-    border-right: 1px solid;
-    padding-left: 0.3em;
+    &__text {
+        font-size: 0.7em;
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 7px;
+        display: inline;
+        border-right: 1px solid;
 
+    }
+
+    &__text--border {
+        border-right: none;
+        padding-left: 0;
+    }
 }
-.header-navigation-left__text--border {
-    border-right: none;
-    padding-left: 0;
-}
-.page-header__logo{
+
+.page-logo {
     display: flex;
-    margin-top: 10px;
+    margin-top: 15px;
     padding-bottom: 50px;
     font-size: 1.58em;
     text-decoration: none;
     text-transform: uppercase;
-}
-.page-header__light{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $textLight;
-    font-weight: lighter;
-}
-.page-header__bold{
-    font-weight: 900;
+
+    &__light {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $textLight;
+        font-weight: lighter;
+    }
+
+    &__bold {
+        font-weight: 900;
+    }
 }
 
-.page-header__right-side {
-    display: flex;
-    align-items: center;
-}
 .header-navigation-right__text {
     font-weight: bold;
     font-size: 0.88em;
     color: $textLight;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 10px;
-    &:hover{
+    margin-right: 30px;
+    padding-bottom: 20px;
+
+    &:hover {
         color: $textDark;
     }
 }

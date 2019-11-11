@@ -4,7 +4,8 @@
 <head>
 	<title>FrontEnd-Task</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet"></head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800&display=swap" rel="stylesheet">
+</head>
 
 <body>
 	<header class="page-header">
@@ -15,17 +16,27 @@
 					<a class="header-navigation-left__text" href="#">Some text</a>
 					<a class="header-navigation-left__text" href="#">Another text</a>
 					<a class="header-navigation-left__text" href="#">One more</a>
-					<a class="header-navigation-left__text header-navigation-left__text--border" href="#">And last one</a>
+					<a class="header-navigation-left__text header-navigation-left__text--border" href="#">And last
+						one</a>
 				</nav>
-				<div class="page-header__logo">
-					<a class="page-header__light" href="#"><span class="page-header__bold">Demo</span>site</a>
+				<div class="page-logo">
+					<a class="page-logo__light" href="#"><span class="page-logo__bold">Demo</span>site</a>
 				</div>
 			</div>
 			<div class="page-header__right-side">
 				<nav class="page-header__right-menu">
 					<a class="header-navigation-right__text" href="#">Home</a>
 					<a class="header-navigation-right__text" href="#">Service</a>
-					<a class="header-navigation-right__text" href="#">Works</a>
+					<div class="dropdown">
+						<a class="header-navigation-right__text" href="#">Works</a>
+						<div class="dropdown-content">
+							<a href="#">All</a>
+							<a href="#">Graphic</a>
+							<a href="#">Design</a>
+							<a href="#">Logo</a>
+							<a href="#">Website</a>
+						</div>
+					</div>
 					<a class="header-navigation-right__text" href="#">About me</a>
 					<a class="header-navigation-right__text" href="#">Contact</a>
 				</nav>
@@ -38,49 +49,44 @@
 				<h1 class="aside-container__title">Welcome</h1>
 				<p class="aside-container__text">Sed laoreet magna at neque sollic-i-tudin, quis tristique ipsum per
 					molestie. Class apt ent taciti sociosqu ad litora torquent per conubia nostra, per inceptos </p>
-				<button class="button-active">Learn more</button>
+				<button class="btn btn--active">Learn more</button>
 			</aside>
 			<article class="first-article">
-				<div class="first-article-img-container">
-					<img class="first-article-img" src="../bender.jpg" alt="some-picture">
+				<div class="first-article__img-container">
+					<img class="first-article__img" src="../bender.jpg" alt="some-picture">
 				</div>
-				<div class="first-article-container">
-					<h2 class="first-article-title">UI/UX Design</h2>
-					<p class="first-article-text">Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen
+				<div class="first-article__container">
+					<h2 class="first-article__title">UI/UX Design</h2>
+					<p class="first-article__text">Fusce posuere et males uada est, nec convallis euis mod. Nam eleifen
 						elitinex placerat semper vitae et enim.</p>
-					<p class="first-article-text">Males uada est, nec convallis euis mod. Nam eleifen elitinex placerat.
+					<p class="first-article__text">Males uada est, nec convallis euis mod. Nam eleifen elitinex
+						placerat.
 					</p>
 				</div>
 			</article>
 		</section>
 		<section class="second-section">
 			<article class="second-article">
-				<h2 class="second-article-title">Web Development</h2>
-				<p class="second-article-text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
+				<h2 class="second-article__title">Web Development</h2>
+				<p class="second-article__text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
 					Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.
 				</p>
-				<p class="second-article-text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
+				<p class="second-article__text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.
 					Integer nec ex accumsan, suscipit eros a, tempus nisi. Suspendisse pretium elementum.</p>
 			</article>
 			<div class="list-block">
-				<h2 class="list-block-title">Wireframe</h2>
-				<p class="list-block-text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.</p>
+				<h2 class="list-block__title">Wireframe</h2>
+				<p class="list-block__text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada ut.</p>
 				<div class="list-container">
 					<div class="list-column">
-						<h3 class="list-column-title">Custom list</h3>
-						<p class="list-column-text">Some heading</p>
-						<ul>
-							<li>
-
-							</li>
-						</ul>
+						<h3 class="list-column__title">Custom List</h3>
+						<p class="list-column__text">Some heading</p>
+						<div id="root"></div>
 					</div>
-					<div class="article-column">
-						<h3 class="article-column-title">Web development</h3>
-						<p class="article-column-text">Velit dignissim sodales ut eu. Non blandit massa enim nec dui
-							nunc mattis enim ut. At quis
-							risus sed vulputate odio ut enim. Nibh mauris cursus mattis molestie a. Eget mi proin sed
-							libero. Est lorem ipsum dolor sit amet consectetur. </p>
+					<div class="list-article">
+						<h3 class="list-article__title">Web Development</h3>
+						<p class="list-article__text">Phasellus interdum aliquam eros, vitae vestibulum elit malesuada
+							ut. Integer nec ex accumsan, suscipit eros a, tempus nisi</p>
 					</div>
 				</div>
 			</div>
@@ -89,8 +95,8 @@
 			<div class="contact-container">
 				<h1 class="contact-container__title">Contact</h1>
 			</div>
-			<div class="contact-container__article">
-				<div>
+			<div class="contact-container__wrap">
+				<div class="contact-container__article">
 					<p class="contact-container__text">Cras feugiat tortor vitae ultrices euismod. Aliquam mollis urna
 						ex, sit amet fermentum diam convallis at. Integer mauris eros, rutrum id pharetra nec, tincidunt
 						quis sem.
@@ -106,15 +112,16 @@
 					<form name="login-form" action="/action_page.php" onsubmit="return onFormSubmit()" method="post">
 						NAME
 						<br>
-						<input class="contact-form-name" type="text" name="firstname" placeholder="Enter your name">
+						<input class="contact-form__input" type="text" name="firstname">
 						<br> EMAIL
 						<br>
-						<input class="contact-form-email" type="text" name="email" placeholder="Enter your last name">
+						<input class="contact-form__input" type="text" name="email">
 						<br> MESSAGE
 						<br>
-						<textarea class="contact-form-text" id="myTextarea" name="comment"></textarea>
+						<textarea class="contact-form__input contact-form__input--msg" id="myTextarea"
+							name="comment"></textarea>
 						<br>
-						<input type="submit" value="Submit">
+						<button class="btn btn--submit" type="submit" value="Submit">Send</button>
 						<div id="p1"></div>
 					</form>
 				</div>
@@ -140,14 +147,13 @@
 				</nav>
 			</div>
 			<div class="footer-rights">
-				&copy DEMOSITE All rigth reserved 
+				&copy <span class="page-header__bold">DEMO</span>SITE All rigth reserved
 			</div>
 		</div>
 	</footer>
 
 	<!-- Scripts -->
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
+	<script src="js/api-request.js"></script>
 	<script src="js/main.polyfills.js"></script>
 </body>
 
